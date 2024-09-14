@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Portfolio / Blog App
 
-## Getting Started
+Projeyi [buraya](http://mfuygur.vercel.app) tıklayarak inceleyebilirsiniz.  
 
-First, run the development server:
+Bu proje 2 amaç doğrultusunda oluşturulmuştur:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. İlk olarak kendimi tanıtmak
+2. İkinci olarak hem yaptığım projeleri anlatmak hem de duygu ve düşüncelerimi paylaşabileceğim bir uygulama yapmak
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Proje bir React framework'ü olan Next.js ile geliştirilmiştir. 
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Proje "Anasayfa", "Projeler", "Bloglar" ve "İletişim" sayfalarından oluşmaktadır. Geriye kalan giriş sayfası kullanıcılara gözükse bile sadece admin tarafıdan giriş yapılabilmektedir.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Veriler "Neurelo" yardımıyla "MongoDB" üzerinde depolanmıştır.
 
-## Learn More
+Yeni bir yazı veya proje eklenirken resimler Firebase Firestore ile depolanmıştır. Eklenen resme ait bir link oluşturularak tüm veriler MongoDB'de bulunan veritabanına kaydedilir. 
 
-To learn more about Next.js, take a look at the following resources:
+Metin editörü olarak "React Quill" kullanılmış, XSS saldırılarının önüne geçmek için "Sanitize HTML" ile de güvenli bir şekilde ekrana bastırılmıştır. 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Projeler ve Bloglar sayfalarında sayfa numarasını ve sayfa başına gösterilecek içerik sayısını tutabilmek için Zustand kullanılmıştır. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+NextAuth ile giriş ve çıkış işlemleri yapılmıştır. Yeni bir yazı veya proje eklemek için NextAuth tarafından oluşturulan veriler kullanılmıştır.
 
-## Deploy on Vercel
+Styled Component yardımıyla React Quill ile oluşturulan metinler tasarım açısından optimize edilmiştir.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Eklenen her proje veya yazı düzenlenebilir ve silinebilir durumdadır. Ancak bu rol, sadece admin için geçerlidir. 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+TailwindCss ile tamamıyla responsive olarak tasarlanan projede açık ve koyu mod bulunmaktadır.
+
+Kullanıcıların mail atmaları için EmailJs kullanılmıştır.
+
+Proje Vercel üzerinde deploy edilmiştir.
+
+## Kullanılan Teknolojiler
+1. HTML
+2. CSS
+3. Javascript
+4. React
+5. NextJs
+6. NextAuth
+7. MongoDB
+8. Firebase
+9. Neurelo
+10. Zustand
+11. Sanitize HTML
+12. React Quill
+13. EmailJS
+14. TailwindCSS
+15. React Icons
+16. Styled Components
+17. Vercel
+18. Github
