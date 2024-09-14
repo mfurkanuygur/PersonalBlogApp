@@ -7,6 +7,8 @@ Bu proje 2 amaç doğrultusunda oluşturulmuştur:
 1. İlk olarak kendimi tanıtmak
 2. İkinci olarak hem yaptığım projeleri anlatmak hem de duygu ve düşüncelerimi paylaşabileceğim bir uygulama yapmak
 
+## Genel Bilgiler
+
 Proje bir React framework'ü olan Next.js ile geliştirilmiştir. 
 
 Proje "Anasayfa", "Projeler", "Bloglar" ve "İletişim" sayfalarından oluşmaktadır. Geriye kalan giriş sayfası kullanıcılara gözükse bile sadece admin tarafıdan giriş yapılabilmektedir.
